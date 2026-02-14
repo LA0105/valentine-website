@@ -1,0 +1,56 @@
+body {
+  margin: 0;
+  font-family: 'Roboto', sans-serif;
+  background: linear-gradient(to bottom, #ffdde1, #ee9ca7);
+  color: #fff;
+  text-align: center;
+  overflow-x: hidden;
+}
+h1 { font-family: 'Pacifico', cursive; font-size: 3rem; margin-top: 2rem; }
+
+.section { padding: 50px 20px; max-width: 800px; margin: auto; position: relative; }
+
+.timeline p { margin: 10px 0; }
+
+.gallery img {
+  width: 150px;
+  margin: 10px;
+  border-radius: 15px;
+  cursor: pointer;
+  transition: transform 0.3s;
+}
+.gallery img:hover { transform: scale(1.1) rotate(5deg); }
+
+button {
+  background: #ff6b81;
+  border: none;
+  padding: 15px 30px;
+  color: #fff;
+  font-size: 1.2rem;
+  border-radius: 30px;
+  cursor: pointer;
+}
+button:hover { background: #ff4757; }
+
+#hiddenMessage {
+  display: none;
+  margin-top: 20px;
+  font-size: 1.5rem;
+  color: #ffeaa7;
+}
+
+.countdown { font-size: 2rem; margin-top: 20px; }
+
+.heart {
+  position: absolute; width: 20px; height: 20px; background: red; transform: rotate(-45deg);
+  animation: float 5s linear infinite;
+}
+.heart::before, .heart::after {
+  content: ''; position: absolute; width: 20px; height: 20px; background: red; border-radius: 50%;
+}
+.heart::before { top: -10px; left: 0; }
+.heart::after { left: 10px; top: 0; }
+@keyframes float { 0% { transform: translateY(0) rotate(-45deg); opacity:1;} 100% { transform: translateY(-800px) rotate(-45deg); opacity:0;} }
+
+.love-meter-container { width: 80%; background: rgba(255,255,255,0.3); border-radius: 30px; margin: 20px auto; overflow: hidden; height: 30px; }
+.love-meter-fill { width: 0%; height: 100%; background: #ff4757; transition: width 2s ease; }
