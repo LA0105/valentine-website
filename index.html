@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Happy Valentine's Day 💖</title>
+<link href="https://fonts.googleapis.com/css2?family=Pacifico&family=Roboto&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<h1>Happy Valentine's Day 💖</h1>
+
+<div id="hearts"></div>
+
+<div class="section timeline">
+  <h2>Our Love Story</h2>
+  <p>🌸 First met at college in 2022</p>
+  <p>💌 First message exchanged: 14 Feb 2022</p>
+  <p>🎉 First trip together: Summer 2023</p>
+  <p>💖 Many laughs, inside jokes, and memories</p>
+</div>
+
+<div class="section gallery">
+  <h2>Our Moments</h2>
+  <img src="images/photo1.jpg" alt="Us 1">
+  <img src="images/photo2.jpg" alt="Us 2">
+  <img src="images/photo3.jpg" alt="Us 3">
+</div>
+
+<div class="section">
+  <h2>A Special Message</h2>
+  <p>My love, every day with you feels like Valentine's Day. I cherish you forever. ❤️</p>
+</div>
+
+<div class="section">
+  <button onclick="revealMessage()">Click for a Surprise 💌</button>
+  <div id="hiddenMessage">You are my everything! 🌹</div>
+
+  <h3>Love Meter 💖</h3>
+  <div class="love-meter-container">
+    <div class="love-meter-fill" id="loveFill"></div>
+  </div>
+</div>
+
+<div class="section countdown" id="countdown">Loading countdown...</div>
+
+<audio id="music" src="music/love_song.mp3" autoplay loop></audio>
+
+<script src="script.js"></script>
+</body>
+</html>
