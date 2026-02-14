@@ -35,7 +35,7 @@ function updateCountdown() {
   const seconds = Math.floor((distance % (1000*60)) / 1000);
 
   document.getElementById('countdown').innerText = 
-    `Time until our special moment: ${days}d ${hours}h ${minutes}m ${seconds}s`;
+    `Can't wait to see you: ${days}d ${hours}h ${minutes}m ${seconds}s`;
 }
 
 // Update countdown every second
