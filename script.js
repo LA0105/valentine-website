@@ -1,3 +1,11 @@
+// --- Play Music Button ---
+document.getElementById('playMusicBtn').addEventListener('click', () => {
+  const music = document.getElementById('music');
+  music.play();
+  // Hide button after click
+  document.getElementById('playMusicBtn').style.display = 'none';
+});
+
 // --- Interactive surprise ---
 function revealMessage() {
   const msg = document.getElementById('hiddenMessage');
@@ -23,9 +31,9 @@ function updateCountdown() {
     // Show your personal message when countdown ends
     document.getElementById('countdown').innerText = "Can't wait to see you on Mar 19, 2026! 💌";
     
-    // Optional: auto-show the hidden love message
+    // Auto-show hidden love message and fill love meter
     document.getElementById('hiddenMessage').style.display = 'block';
-    fillLoveMeter(); // Fill the love meter automatically
+    fillLoveMeter();
     return;
   }
 
