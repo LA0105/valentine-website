@@ -8,7 +8,7 @@ function fillLoveMeter() {
   document.getElementById('loveFill').style.width = '100%';
 }
 
-const countdownDate = new Date("Mar 19, 2026 00:00:00").getTime();
+const specialDate = new Date("Mar 19, 2026 17:00:00").getTime();
 function updateCountdown() {
   const now = new Date().getTime();
   const dist = countdownDate - now;
